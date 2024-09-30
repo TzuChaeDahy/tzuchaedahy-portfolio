@@ -1,15 +1,17 @@
 :root {
-  --color-primary-100: #fefefe;
-  --color-primary-200: #dfdfdf;
-  --color-primary-400: #959595;
-  --color-primary-500: #707070;
-  --color-primary-800: #121212;
-
-  --color-accent-500: #fa6e00;
+  --color-primary-100: rgba(254, 254, 254, 1);
+  --color-primary-200: rgba(223, 223, 223, 1);
+  --color-primary-400: rgba(149, 149, 149, 1);
+  --color-primary-500: rgba(112, 112, 112, 1);
+  --color-primary-700: rgba(254, 254, 254, 0.04);
+  --color-primary-800: rgba(18, 18, 18, 1);
+  
+  --color-accent-500: rgba(250, 110, 0, 1);
+  
 
   --ff-primary: "Lato", sans-serif;
 
-  --fs-xxxlarge: 4.5rem;
+  --fs-xxxlarge: 3.5rem;
   --fs-large: 1.75rem;
   --fs-medium: 1.5rem;
   --fs-small: 1.25rem;
@@ -46,7 +48,7 @@ ul {
 
   font-family: var(--ff-primary);
   color: var(--color-primary-500);
-  font-size: var(--fs-small);
+  font-size: var(--fs-xsmall);
   font-weight: var(--fw-bold);
 }
 
@@ -57,7 +59,9 @@ body {
 }
 
 body {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+
+  background-color: var(--color-primary-800);
 }
 
 ol,
