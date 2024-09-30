@@ -5,7 +5,6 @@ export default function App() {
     return (
         <>
             <Header />
-            <div style={{ height: "1000vh" }}></div>
         </>
     );
 }
