@@ -1,0 +1,32 @@
+body {
+    background-color: var(--color-primary-800);
+}
+
+.primary_btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-accent-500);
+    border-radius: 0.375rem;
+
+    background: var(--color-accent-500);
+
+    font-family: inherit;
+    text-align: center;
+    color: var(--color-primary-100);
+    font-weight: var(--fw-bold);
+
+    cursor: pointer;
+}
+
+.secondary_btn {
+    border-color: var(--color-primary-200);
+    background: none;
+    color: var(--color-primary-200);
+}
+
+.primary_btn:hover {
+    opacity: 75%;
+}
+
+.primary_btn:active {
+    opacity: 90%;
+}
