@@ -7,7 +7,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.wrapper}>
                 <AlignJustify />
-                <img src="/logo.svg" alt="logo" />
+                <img src="/assets/logo.svg" alt="logo" />
                 <Button
                     title="Hire Me"
                     handleOnClick={() => console.log("teste")}

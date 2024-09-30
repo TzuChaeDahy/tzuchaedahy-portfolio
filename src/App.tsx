@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import Intro from "./components/intro/Intro";
+import Photo from "./components/photo/Photo";
 import styles from "./style.module.css"
 
 export default function App() {
@@ -7,10 +8,10 @@ export default function App() {
         <>
             <Header />
             <main className={styles.main}>
-                <div>
+                <section className={styles.first_section}>
                     <Intro />
-                    {/* <Photo /> */}
-                </div>
+                    <Photo />
+                </section>
             </main>
         </>
     );

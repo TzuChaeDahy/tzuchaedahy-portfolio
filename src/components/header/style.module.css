@@ -4,6 +4,8 @@
     left: 0;
     padding: 1rem;
     width: 100%;
+
+    background-color: var(--color-primary-800);
 }
 
 .wrapper {

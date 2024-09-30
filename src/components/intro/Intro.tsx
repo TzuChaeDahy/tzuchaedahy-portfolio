@@ -15,7 +15,7 @@ function Stats({ title, years, bordered = false }: StatsProps) {
 
 export default function Intro() {
     return (
-        <section className={styles.section}>
+        <article className={styles.wrapper}>
             <div className={styles.presentation_wrapper}>
                 <span>Hi, i am</span>
                 <h2>Vinicius Alves</h2>
@@ -42,6 +42,6 @@ export default function Intro() {
                 <Stats title="Project done" years={5} bordered/>
                 <Stats title="Happy clients" years={2} />
             </div>
-        </section>
+        </article>
     );
 }
