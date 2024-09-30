@@ -38,8 +38,8 @@ export default function Intro() {
                 />
             </div>
             <div className={styles.stats_wrapper}>
-                <Stats title="Yrs of exp." years={2}/>
-                <Stats title="Project done" years={5} bordered/>
+                <Stats title="Years of xp" years={2}/>
+                <Stats title="Projects done" years={5} bordered/>
                 <Stats title="Happy clients" years={2} />
             </div>
         </article>

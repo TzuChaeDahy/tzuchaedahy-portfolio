@@ -66,7 +66,7 @@
     background-color: var(--color-primary-700);
 
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     border-radius: 0.5rem;
 
     display: flex;
@@ -78,18 +78,20 @@
     flex-direction: column;
     gap: 1rem;
 
-    padding: 0 1rem;
+    padding: .5rem 0;
 
     flex: 1;
 }
 
 .stats_years {
+    text-align: center;
     font-size: var(--fs-small);
     color: var(--color-accent-500);
     font-weight: var(--fw-bold);
 }
 
 .stats_title {
+    text-align: center;
     color: var(--color-primary-200);
 }
 
