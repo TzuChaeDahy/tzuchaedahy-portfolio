@@ -6,6 +6,7 @@
     width: 100%;
 
     background-color: var(--color-primary-800);
+    z-index: 1000;
 }
 
 .wrapper {

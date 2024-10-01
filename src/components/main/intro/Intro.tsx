@@ -1,46 +1,11 @@
-import { motion, useAnimation, useInView } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
-import { useEffect, useRef } from "react";
 import { StatsProps } from ".";
-import Button from "../utils/button/Button";
+import Button from "../../utils/button/Button";
 import styles from "./style.module.css";
 
-const presentationVariants = {
-    hidden: {
-        x: 75,
-        opacity: 0,
-    },
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-            duration: 1.5,
-            type: "spring",
-            stiffness: 40,
-        },
-    },
-};
-
 function Presentation() {
-    const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
-    const motionControls = useAnimation();
-
-    useEffect(() => {
-        if (isInView) {
-            motionControls.start("visible")
-        }
-    }, [isInView]);
-
     return (
-        <motion.article
-            className={styles.intro_wrapper}
-            variants={presentationVariants}
-            initial="hidden"
-            animate={motionControls}
-            ref={ref}
-        >
+        <article className={styles.intro_wrapper}>
             <div className={styles.presentation_wrapper}>
                 <span>Hi, i am</span>
                 <h2>Vinicius Alves</h2>
@@ -67,7 +32,7 @@ function Presentation() {
                 <Stats title="Projects done" years={5} bordered />
                 <Stats title="Happy clients" years={2} />
             </div>
-        </motion.article>
+        </article>
     );
 }
 
@@ -83,31 +48,9 @@ function Stats({ title, years, bordered = false }: StatsProps) {
     );
 }
 
-const photoVariants = {
-    hidden: {
-        x: -75,
-        opacity: 0,
-    },
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-            duration: 1.5,
-            type: "spring",
-            stiffness: 40,
-        },
-    },
-};
-
 function Photo() {
     return (
-        <motion.article
-            className={styles.photo_wrapper}
-            variants={photoVariants}
-            initial="hidden"
-            animate="visible"
-        >
+        <article className={styles.photo_wrapper}>
             <div className={styles.photo_background}>
                 <img
                     src="/images/vinicius.png"
@@ -115,7 +58,7 @@ function Photo() {
                     className={styles.photo_image}
                 />
             </div>
-        </motion.article>
+        </article>
     );
 }
 

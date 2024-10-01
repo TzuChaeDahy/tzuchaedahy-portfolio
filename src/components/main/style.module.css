@@ -1,7 +1,8 @@
 .main {
     margin-top: 6.5rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
 }
