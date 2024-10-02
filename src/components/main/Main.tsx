@@ -1,3 +1,4 @@
+import AboutMe from "./about/AboutMe";
 import Intro from "./intro/Intro";
 import Services from "./services/Services";
 import styles from "./style.module.css";
@@ -7,6 +8,7 @@ export default function Main() {
         <main className={styles.main}>
             <Intro />
             <Services />
+            <AboutMe />
         </main>
     );
 }

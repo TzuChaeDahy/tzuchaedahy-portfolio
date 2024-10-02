@@ -1,0 +1,31 @@
+.section {
+    position: relative;
+
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    background: var(--color-primary-700);
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-bottom-right-radius: calc((100vw - 1rem) / 2);
+    border-bottom-left-radius: calc((100vw - 1rem) / 2);
+}

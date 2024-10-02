@@ -1,6 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import { StatsProps } from ".";
 import Button from "../../utils/button/Button";
+import Photo from "../../utils/photo/Photo";
 import styles from "./style.module.css";
 
 function Presentation() {
@@ -48,25 +49,11 @@ function Stats({ title, years, bordered = false }: StatsProps) {
     );
 }
 
-function Photo() {
-    return (
-        <article className={styles.photo_wrapper}>
-            <div className={styles.photo_background}>
-                <img
-                    src="/images/vinicius.png"
-                    alt="vinicius"
-                    className={styles.photo_image}
-                />
-            </div>
-        </article>
-    );
-}
-
 export default function Intro() {
     return (
         <section className={styles.section}>
             <Presentation />
-            <Photo />
+            <Photo url="/images/vinicius_front.png" />
         </section>
     );
 }
