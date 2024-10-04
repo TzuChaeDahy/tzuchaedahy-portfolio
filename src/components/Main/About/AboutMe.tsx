@@ -1,6 +1,9 @@
-import Button from "../../utils/button/Button";
-import Photo from "../../utils/photo/Photo";
-import SectionTitle from "../../utils/sectionTitle/SectionTitle";
+import { AmazonLogo, Atom, Coffee, GoogleLogo } from "@phosphor-icons/react";
+import "react-circular-progressbar/dist/styles.css";
+import Button from "../../utils/Button/Button";
+import Photo from "../../utils/Photo/Photo";
+import SectionTitle from "../../utils/SectionTitle/SectionTitle";
+import SkillCircle from "./SkillCirle/SkillCircle";
 import styles from "./style.module.css";
 
 function Presenting() {
@@ -64,6 +67,28 @@ export default function AboutMe() {
                 <Photo url="/images/vinicius_side.png" isRounded={false} />
                 <Presenting />
                 <Button title="Download CV" handleOnClick={() => {}} />
+            </article>
+            <article className={styles.skills_wrapper}>
+                <SkillCircle
+                    percentage={70}
+                    icon={<Coffee size={40} className={styles.icon} />}
+                    techSkill="Spring Boot"
+                />
+                <SkillCircle
+                    percentage={50}
+                    icon={<Atom size={40} className={styles.icon} />}
+                    techSkill="React"
+                />
+                <SkillCircle
+                    percentage={60}
+                    icon={<AmazonLogo size={40} className={styles.icon} />}
+                    techSkill="AWS"
+                />
+                <SkillCircle
+                    percentage={40}
+                    icon={<GoogleLogo size={40} className={styles.icon} />}
+                    techSkill="Golang"
+                />
             </article>
         </section>
     );

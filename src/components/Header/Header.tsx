@@ -1,5 +1,5 @@
 import { AlignJustify } from "lucide-react";
-import Button from "../utils/button/Button";
+import Button from "../utils/Button/Button";
 import styles from "./style.module.css";
 
 export default function Header() {

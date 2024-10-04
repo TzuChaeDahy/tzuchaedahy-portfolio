@@ -28,3 +28,14 @@
 .presenting_container button {
     align-self: center;
 }
+
+.skills_wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+}
+
+.icon {
+    color: var(--color-primary-400);
+}

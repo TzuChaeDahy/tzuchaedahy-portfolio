@@ -1,6 +1,6 @@
 import { Cpu, MessageSquareCode, Smartphone, Waypoints } from "lucide-react";
 import { ServiceProps } from ".";
-import SectionTitle from "../../utils/sectionTitle/SectionTitle";
+import SectionTitle from "../../utils/SectionTitle/SectionTitle";
 import styles from "./style.module.css";
 
 function Service({ title, description, icon }: ServiceProps) {

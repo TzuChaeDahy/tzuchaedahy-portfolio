@@ -1,7 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import { StatsProps } from ".";
-import Button from "../../utils/button/Button";
-import Photo from "../../utils/photo/Photo";
+import Button from "../../utils/Button/Button";
+import Photo from "../../utils/Photo/Photo";
 import styles from "./style.module.css";
 
 function Presentation() {
