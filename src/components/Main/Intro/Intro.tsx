@@ -1,8 +1,9 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import { StatsProps } from ".";
 import Button from "../../utils/Button/Button";
 import Photo from "../../utils/Photo/Photo";
 import styles from "./style.module.css";
+import ButtonIcon from "../../utils/ButtonIcon/ButtonIcon";
 
 function Presentation() {
     return (
@@ -13,12 +14,9 @@ function Presentation() {
             </div>
             <h1>Fullstack Developer</h1>
             <div className={styles.icon_wrapper}>
-                <button className={styles.icon}>
-                    <Github />
-                </button>
-                <button className={styles.icon}>
-                    <Linkedin />
-                </button>
+                <ButtonIcon icon={<Github />} />
+                <ButtonIcon icon={<Instagram />} />
+                <ButtonIcon icon={<Linkedin />} />
             </div>
             <div className={styles.button_wrapper}>
                 <Button title="Hire Me" handleOnClick={() => {}} />
