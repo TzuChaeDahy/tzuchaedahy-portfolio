@@ -3,7 +3,7 @@ import SectionTitle from "../../utils/SectionTitle/SectionTitle";
 import styles from "./style.module.css";
 
 function handleFormSubmit(event: React.MouseEvent) {
-    event.preventDefault(); 
+    event.preventDefault();
 }
 
 export default function ContactMe() {
@@ -14,21 +14,24 @@ export default function ContactMe() {
                 description="Reach out and connect with me"
             />
             <form className={styles.form_wrapper}>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    className={styles.input}
-                />
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className={styles.input}
-                />
-                <textarea
-                    placeholder="Project Details"
-                    className={styles.text_area}
-                    
-                />
+                <div className={styles.container}>
+                    <div className={styles.wrapper}>
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            className={styles.input}
+                        />
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            className={styles.input}
+                        />
+                    </div>
+                    <textarea
+                        placeholder="Project Details"
+                        className={styles.text_area}
+                    />
+                </div>
                 <Button
                     title="Send"
                     handleOnClick={handleFormSubmit}

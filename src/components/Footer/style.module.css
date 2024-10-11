@@ -1,26 +1,31 @@
-footer {
+.footer {
     padding: 1.5rem 1rem;
     background: var(--color-primary-700);
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
 }
 
-footer img {
+.logo {
     align-self: center;
 }
 
-footer nav {
-    list-style: none;
-
+.nav_container,
+.social_network_container,
+.personal_info_group {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
 
-nav li a {
+.nav_container {
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav_container_link {
     color: var(--color-primary-400);
     text-decoration: none;
 }
@@ -29,19 +34,13 @@ nav li a:hover {
     color: var(--color-accent-500);
 }
 
-.social_network_wrapper {
+.personal_info_container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.info_wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.copyright_wrapper {
+.copyright_container {
     border-top: 1px solid var(--color-primary-400);
     padding: 1rem 0;
 
@@ -49,4 +48,7 @@ nav li a:hover {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+
+    width: 100%;
+    max-width: 28rem;
 }

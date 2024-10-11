@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 
 function Service({ title, description, icon }: ServiceProps) {
     return (
-        <div className={styles.service_wrapper}>
+        <div className={styles.service_container}>
             <span className={styles.service_icon}>{icon}</span>
             <h1 className={styles.service_title}>{title}</h1>
             <p className={styles.service_description}>{description}</p>
@@ -15,12 +15,12 @@ function Service({ title, description, icon }: ServiceProps) {
 
 export default function Services() {
     return (
-        <section className={styles.services_container}>
+        <section className={styles.section}>
             <SectionTitle
                 title="Services"
                 description="Watch out below some services i can offer to you"
             />
-            <article className={styles.services_wrapper}>
+            <article className={styles.services_container}>
                 <Service
                     title="Landing Page"
                     description="Develop a responsive and interactive landing page"

@@ -1,9 +1,16 @@
 .main {
-    margin-top: 5.5rem;
-    padding: 1rem;
+    margin-top: 7rem;
+    padding-inline: 1.5rem;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+}
+
+@media (min-width: 64rem) {
+    .main {
+        max-width: 90rem;
+        padding-inline: 4rem;
+    }
 }

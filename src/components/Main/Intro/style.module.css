@@ -5,51 +5,51 @@
     gap: 2rem;
 }
 
-.intro_wrapper {
+.presentation_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.presentation_wrapper {
+.intro_text_container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.presentation_wrapper span {
+.intro_text_container span {
     text-align: center;
 }
 
-.presentation_wrapper h2 {
+.intro_text_container h1 {
     font-size: var(--fs-small);
     text-align: center;
     color: var(--color-primary-200);
 }
 
-.intro_wrapper h1 {
+.presentation_container h2 {
     font-size: var(--fs-xxxlarge);
     text-align: center;
     color: var(--color-accent-500);
     font-weight: var(--fw-black);
 }
 
-.icon_wrapper {
+.social_network_container {
     display: flex;
     gap: 1.25rem;
 }
 
-.button_wrapper {
+.buttons_container {
     display: flex;
     gap: 1.5rem;
 }
 
-.stats_wrapper {
+.stats_container {
     background-color: var(--color-primary-700);
 
     width: 100%;
+    max-width: 36rem;
     padding: 1rem 0;
     border-radius: 0.5rem;
 
@@ -57,28 +57,47 @@
     justify-content: space-between;
 }
 
-.stats_container {
+.intern_stats_container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 
     flex: 1;
 }
 
-.stats_years {
+.intern_stats_years {
     text-align: center;
     font-size: var(--fs-small);
     color: var(--color-accent-500);
     font-weight: var(--fw-bold);
 }
 
-.stats_title {
+.intern_stats_title {
     text-align: center;
     color: var(--color-primary-200);
 }
 
-.bordered {
+.intern_stats_container_bordered {
     border-inline: 1px solid var(--color-primary-200);
+}
+
+@media (min-width: 64rem) {
+    .section {
+        width: 100%;
+        max-width: 90rem;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .presentation_container {
+        flex: 2;
+        align-items: start;
+    }
+
+    .intro_text_container span, .presentation_container h2 {
+        text-align: start;
+    }
 }

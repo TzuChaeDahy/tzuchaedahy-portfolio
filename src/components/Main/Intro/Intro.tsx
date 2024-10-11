@@ -7,18 +7,18 @@ import ButtonIcon from "../../utils/ButtonIcon/ButtonIcon";
 
 function Presentation() {
     return (
-        <article className={styles.intro_wrapper}>
-            <div className={styles.presentation_wrapper}>
+        <article className={styles.presentation_container}>
+            <div className={styles.intro_text_container}>
                 <span>Hi, i am</span>
-                <h2>Vinicius Alves</h2>
+                <h1>Vinicius Alves</h1>
             </div>
-            <h1>Fullstack Developer</h1>
-            <div className={styles.icon_wrapper}>
+            <h2>Fullstack Developer</h2>
+            <div className={styles.social_network_container}>
                 <ButtonIcon icon={<Github />} />
                 <ButtonIcon icon={<Instagram />} />
                 <ButtonIcon icon={<Linkedin />} />
             </div>
-            <div className={styles.button_wrapper}>
+            <div className={styles.buttons_container}>
                 <Button title="Hire Me" handleOnClick={() => {}} />
                 <Button
                     title="Download CV"
@@ -26,7 +26,7 @@ function Presentation() {
                     secondary
                 />
             </div>
-            <div className={styles.stats_wrapper}>
+            <div className={styles.stats_container}>
                 <Stats title="Years of xp" years={2} />
                 <Stats title="Projects done" years={5} bordered />
                 <Stats title="Happy clients" years={2} />
@@ -37,12 +37,12 @@ function Presentation() {
 
 function Stats({ title, years, bordered = false }: StatsProps) {
     const statsClass = bordered
-        ? styles.stats_container + " " + styles.bordered
-        : styles.stats_container;
+        ? styles.intern_stats_container + " " + styles.intern_stats_container_bordered
+        : styles.intern_stats_container;
     return (
         <div className={statsClass}>
-            <span className={styles.stats_years}>{years}+</span>
-            <span className={styles.stats_title}>{title}</span>
+            <span className={styles.intern_stats_years}>{years}+</span>
+            <span className={styles.intern_stats_title}>{title}</span>
         </div>
     );
 }

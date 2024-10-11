@@ -1,4 +1,10 @@
-import { AmazonLogo, Atom, Coffee, GoogleLogo } from "@phosphor-icons/react";
+import {
+    AmazonLogo,
+    Atom,
+    Coffee,
+    DownloadSimple,
+    GoogleLogo,
+} from "@phosphor-icons/react";
 import "react-circular-progressbar/dist/styles.css";
 import Button from "../../utils/Button/Button";
 import Photo from "../../utils/Photo/Photo";
@@ -8,7 +14,7 @@ import styles from "./style.module.css";
 
 function Presenting() {
     return (
-        <div className={styles.presenting_wrapper}>
+        <div className={styles.presenting_container}>
             <p className={styles.presenting_text}>
                 Hello! My name is Vinicius Alves Pacheco, and I am a Junior
                 Fullstack Developer with a deep passion for technology and
@@ -63,12 +69,20 @@ export default function AboutMe() {
                 title="About Me"
                 description="Know a bit more about my path as a developer"
             />
-            <article className={styles.presenting_container}>
+            <article className={styles.about_me_container}>
+                <div className={styles.photo_container}>
                 <Photo url="/images/vinicius_side.png" isRounded={false} />
-                <Presenting />
-                <Button title="Download CV" handleOnClick={() => {}} />
+                </div>
+                <div className={styles.about_me_text_container}>
+                    <Presenting />
+                    <Button
+                        title="Download CV"
+                        handleOnClick={() => {}}
+                        icon={<DownloadSimple size={24} weight="bold" />}
+                    />
+                </div>
             </article>
-            <article className={styles.skills_wrapper}>
+            <article className={styles.skills_container}>
                 <SkillCircle
                     percentage={70}
                     icon={<Coffee size={40} className={styles.icon} />}
