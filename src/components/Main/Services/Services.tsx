@@ -15,7 +15,7 @@ function Service({ title, description, icon }: ServiceProps) {
 
 export default function Services() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="services">
             <SectionTitle
                 title="Services"
                 description="Watch out below some services i can offer to you"

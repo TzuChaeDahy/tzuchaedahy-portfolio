@@ -1,36 +1,35 @@
 :root {
-  --color-primary-100: rgba(254, 254, 254, 1);
-  --color-primary-200: rgba(223, 223, 223, 1);
-  --color-primary-400: rgba(149, 149, 149, 1);
-  --color-primary-500: rgba(112, 112, 112, 1);
-  --color-primary-700: rgba(254, 254, 254, 0.04);
-  --color-primary-800: rgba(18, 18, 18, 1);
-  
-  --color-accent-500: rgba(250, 110, 0, 1);
-  
+    --color-primary-100: rgba(254, 254, 254, 1);
+    --color-primary-200: rgba(223, 223, 223, 1);
+    --color-primary-400: rgba(149, 149, 149, 1);
+    --color-primary-500: rgba(112, 112, 112, 1);
+    --color-primary-700: rgba(254, 254, 254, 0.04);
+    --color-primary-800: rgba(18, 18, 18, 1);
 
-  --ff-primary: "Lato", sans-serif;
+    --color-accent-500: rgba(250, 110, 0, 1);
 
-  --fs-xxxlarge: 3.5rem;
-  --fs-large: 1.75rem;
-  --fs-medium: 1.5rem;
-  --fs-small: 1.25rem;
-  --fs-xsmall: 1rem;
+    --ff-primary: "Lato", sans-serif;
 
-  --fw-regular: 400;
-  --fw-bold: 700;
-  --fw-black: 900;
+    --fs-xxxlarge: 3.5rem;
+    --fs-large: 1.75rem;
+    --fs-medium: 1.5rem;
+    --fs-small: 1.25rem;
+    --fs-xsmall: 1rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body,
@@ -43,35 +42,37 @@ h6,
 p,
 ol,
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  font-family: var(--ff-primary);
-  color: var(--color-primary-500);
-  font-size: var(--fs-xsmall);
-  font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
+    color: var(--color-primary-500);
+    font-size: var(--fs-xsmall);
+    font-weight: var(--fw-bold);
 }
 
 html,
 body {
-  width: 100%;
-  min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-primary-800);
+    background-color: var(--color-primary-800);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }

@@ -64,14 +64,14 @@ function Presenting() {
 
 export default function AboutMe() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="about_me">
             <SectionTitle
                 title="About Me"
                 description="Know a bit more about my path as a developer"
             />
             <article className={styles.about_me_container}>
                 <div className={styles.photo_container}>
-                <Photo url="/images/vinicius_side.png" isRounded={false} />
+                <Photo url="/images/vinicius_side.png" />
                 </div>
                 <div className={styles.about_me_text_container}>
                     <Presenting />

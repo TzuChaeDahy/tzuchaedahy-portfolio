@@ -7,7 +7,7 @@ import ButtonIcon from "../../utils/ButtonIcon/ButtonIcon";
 
 function Presentation() {
     return (
-        <article className={styles.presentation_container}>
+        <article className={styles.presentation_container} id="home">
             <div className={styles.intro_text_container}>
                 <span>Hi, i am</span>
                 <h1>Vinicius Alves</h1>

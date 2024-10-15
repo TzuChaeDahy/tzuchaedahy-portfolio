@@ -8,22 +8,22 @@ export default function Footer() {
             <img src="/assets/logo.svg" alt="logo" className={styles.logo} />
             <nav className={styles.nav_container}>
                 <li>
-                    <a href="#" className={styles.nav_container_link}>
+                    <a href="#home" className={styles.nav_container_link}>
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" className={styles.nav_container_link}>
+                    <a href="#services" className={styles.nav_container_link}>
                         Services
                     </a>
                 </li>
                 <li>
-                    <a href="#" className={styles.nav_container_link}>
+                    <a href="#about_me" className={styles.nav_container_link}>
                         About me
                     </a>
                 </li>
                 <li>
-                    <a href="#" className={styles.nav_container_link}>
+                    <a href="#contact_me" className={styles.nav_container_link}>
                         Contact me
                     </a>
                 </li>

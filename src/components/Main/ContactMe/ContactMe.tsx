@@ -8,7 +8,7 @@ function handleFormSubmit(event: React.MouseEvent) {
 
 export default function ContactMe() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="contact_me">
             <SectionTitle
                 title="Contact Me"
                 description="Reach out and connect with me"
