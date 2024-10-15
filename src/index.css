@@ -67,6 +67,12 @@ body {
     align-items: center;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ol,
 ul {
     list-style: none;

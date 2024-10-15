@@ -2,7 +2,7 @@
     padding: 1.5rem 1rem;
     background: var(--color-primary-700);
 
-    width: 100%;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
