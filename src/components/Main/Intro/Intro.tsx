@@ -14,9 +14,33 @@ function Presentation() {
             </div>
             <h2>Fullstack Developer</h2>
             <div className={styles.social_network_container}>
-                <ButtonIcon icon={<Github />} />
-                <ButtonIcon icon={<Instagram />} />
-                <ButtonIcon icon={<Linkedin />} />
+                <ButtonIcon
+                    icon={<Github />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.github.com/TzuChaeDahy/",
+                            "_blank"
+                        );
+                    }}
+                />
+                <ButtonIcon
+                    icon={<Instagram />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.instagram.com/vinicius_pacheco13/",
+                            "_blank"
+                        );
+                    }}
+                />
+                <ButtonIcon
+                    icon={<Linkedin />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.linkedin.com/in/vinicius-alves-pacheco-aa2b7a220/",
+                            "_blank"
+                        );
+                    }}
+                />
             </div>
             <div className={styles.buttons_container}>
                 <Button title="Hire Me" handleOnClick={() => {}} />
@@ -37,7 +61,9 @@ function Presentation() {
 
 function Stats({ title, years, bordered = false }: StatsProps) {
     const statsClass = bordered
-        ? styles.intern_stats_container + " " + styles.intern_stats_container_bordered
+        ? styles.intern_stats_container +
+          " " +
+          styles.intern_stats_container_bordered
         : styles.intern_stats_container;
     return (
         <div className={statsClass}>

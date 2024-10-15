@@ -29,9 +29,33 @@ export default function Footer() {
                 </li>
             </nav>
             <section className={styles.social_network_container}>
-                <ButtonIcon icon={<Github />} />
-                <ButtonIcon icon={<Instagram />} />
-                <ButtonIcon icon={<Linkedin />} />
+                <ButtonIcon
+                    icon={<Github />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.github.com/TzuChaeDahy/",
+                            "_blank"
+                        );
+                    }}
+                />
+                <ButtonIcon
+                    icon={<Instagram />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.instagram.com/vinicius_pacheco13/",
+                            "_blank"
+                        );
+                    }}
+                />
+                <ButtonIcon
+                    icon={<Linkedin />}
+                    onClick={() => {
+                        window.open(
+                            "https://www.linkedin.com/in/vinicius-alves-pacheco-aa2b7a220/",
+                            "_blank"
+                        );
+                    }}
+                />
             </section>
             <section className={styles.personal_info_container}>
                 <div className={styles.personal_info_group}>

@@ -1,3 +1,4 @@
 export interface ButtonIconProps {
-    icon: JSX.Element
+    icon: JSX.Element;
+    onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
