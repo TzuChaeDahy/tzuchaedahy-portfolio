@@ -46,7 +46,12 @@ function Presentation() {
                 <Button title="Hire Me" handleOnClick={() => {}} />
                 <Button
                     title="Download CV"
-                    handleOnClick={() => {}}
+                    handleOnClick={() => {
+                        window.open(
+                            "/assets/curriculo.pdf",
+                            "_blank"
+                        );
+                    }}
                     secondary
                 />
             </div>

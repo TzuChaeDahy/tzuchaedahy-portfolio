@@ -71,13 +71,15 @@ export default function AboutMe() {
             />
             <article className={styles.about_me_container}>
                 <div className={styles.photo_container}>
-                <Photo url="/images/vinicius_side.png" />
+                    <Photo url="/images/vinicius_side.png" />
                 </div>
                 <div className={styles.about_me_text_container}>
                     <Presenting />
                     <Button
                         title="Download CV"
-                        handleOnClick={() => {}}
+                        handleOnClick={() => {
+                            window.open("/assets/curriculo.pdf", "_blank");
+                        }}
                         icon={<DownloadSimple size={24} weight="bold" />}
                     />
                 </div>
