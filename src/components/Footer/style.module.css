@@ -30,10 +30,17 @@
 .nav_container_link {
     color: var(--color-primary-400);
     text-decoration: none;
+
+    transition: 0.15s ease-in-out;
+    transition-property: color, opacity;
 }
 
 nav li a:hover {
     color: var(--color-accent-500);
+}
+
+nav li a:active {
+    opacity: 40%;
 }
 
 .personal_info_container {

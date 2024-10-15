@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    transition: 0.15s ease-in-out opacity;
 }
 
 .secondary_btn {
@@ -24,9 +26,9 @@
 }
 
 .primary_btn:hover {
-    opacity: 75%;
+    opacity: 90%;
 }
 
 .primary_btn:active {
-    opacity: 90%;
+    opacity: 40%;
 }

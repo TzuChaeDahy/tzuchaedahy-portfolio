@@ -11,12 +11,13 @@
     color: var(--color-primary-400);
 
     cursor: pointer;
+    transition: 0.15s ease-in-out opacity;
 }
 
 .icon:hover {
-    opacity: 75%;
+    opacity: 90%;
 }
 
 .icon:active {
-    opacity: 90%;
+    opacity: 40%;
 }
